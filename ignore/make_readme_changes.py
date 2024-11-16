@@ -30,5 +30,5 @@ def update_readme(count):
 if __name__ == "__main__":
     directory = '.'
     total_solved = count_solutions(directory)
-    # update_readme(total_solved)
+    update_readme(total_solved)
     print(f"Total problems solved: {total_solved}")
