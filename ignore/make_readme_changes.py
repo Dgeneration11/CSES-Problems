@@ -14,18 +14,18 @@ def count_solutions(directory):
             count += 1
     return count
 
-# def update_readme(count):
-#     readme_path = 'README.md'
-#     with open(readme_path, 'r') as file:
-#         content = file.readlines()
+def update_readme(count):
+    readme_path = 'README.md'
+    with open(readme_path, 'r') as file:
+        content = file.readlines()
 
-#     for i, line in enumerate(content):
-#         if "total of **" in line:
-#             content[i] = f"As of now, a total of **{count}** problems have been solved.\n"
-#             break
+    for i, line in enumerate(content):
+        if "total of **" in line:
+            content[i] = f"As of now, a total of **{count}** / **300** problems have been solved.\n"
+            break
 
-#     with open(readme_path, 'w') as file:
-#         file.writelines(content)
+    with open(readme_path, 'w') as file:
+        file.writelines(content)
 
 if __name__ == "__main__":
     directory = '.'
