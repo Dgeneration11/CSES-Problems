@@ -2,3 +2,6 @@
 *.o
 *.out
 *.exe
+tempCodeRunnerFile.cpp
+test.cpp
+.vscode
